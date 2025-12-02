@@ -530,5 +530,5 @@ All Mermaid source code is available in:
 - `docs/ARCHITECTURE.mermaid` - Complete architecture diagrams
 - `README.md` - Embedded in main documentation
 
-**Last Updated:** January 2025  
+**Last Updated:** 2nd December 2025  
 **Maintained By:** @thetruesammyjay
