@@ -253,8 +253,8 @@ erDiagram
 
     USERS {
         uuid id PK
-        string email UK
-        string phone UK
+        string email "unique"
+        string phone "unique"
         string password_hash
         string full_name
         boolean email_verified
@@ -265,7 +265,7 @@ erDiagram
     STORES {
         uuid id PK
         uuid user_id FK
-        string username UK
+        string username "unique"
         string display_name
         text description
         string logo_url
@@ -290,7 +290,7 @@ erDiagram
     ORDERS {
         uuid id PK
         uuid store_id FK
-        string order_number UK
+        string order_number "unique"
         string customer_name
         string customer_phone
         json items
@@ -299,7 +299,7 @@ erDiagram
         decimal total_amount
         string status
         string payment_status
-        string payment_reference UK
+        string payment_reference "unique"
     }
 
     TRANSACTIONS {
@@ -325,7 +325,7 @@ erDiagram
 
     VIRTUAL_ACCOUNTS {
         uuid id PK
-        uuid store_id FK UK
+        uuid store_id FK "unique"
         string account_number
         string account_name
         string bank_name
@@ -879,7 +879,7 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 - **Email:** sammyjayisthename@gmail.com
 - **WhatsApp:** +234 XXX XXX XXXX
-- **Documentation:** [Docs](https://github.com/thetruesammyjay/agm-store-builder/docs)
+- **Documentation:** https://docs.agmshop.com
 
 ---
 
